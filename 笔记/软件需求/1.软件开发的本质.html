@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>软件开发的本质 | 模式的个人网站</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/img/logo.png">
+    <meta name="description" content="学习就好比是座大山，人们沿着不同的路登山，分享着自己看到的风景。你不一定能看到别人看到的风景，体会到别人的心情。只有自己去登山，才能看到不一样的风景，体会才更加深刻。">
+    <link rel="preload" href="/assets/css/0.styles.9d8515da.css" as="style"><link rel="preload" href="/assets/js/app.d23ef9a5.js" as="script"><link rel="preload" href="/assets/js/2.b5e03ded.js" as="script"><link rel="preload" href="/assets/js/82.62ccb1e8.js" as="script"><link rel="prefetch" href="/assets/js/10.79e10916.js"><link rel="prefetch" href="/assets/js/11.bb2fc84a.js"><link rel="prefetch" href="/assets/js/12.8b596886.js"><link rel="prefetch" href="/assets/js/13.3cf776d0.js"><link rel="prefetch" href="/assets/js/14.3f902742.js"><link rel="prefetch" href="/assets/js/15.97689a43.js"><link rel="prefetch" href="/assets/js/16.21c07ad5.js"><link rel="prefetch" href="/assets/js/17.f0697782.js"><link rel="prefetch" href="/assets/js/18.f2229e19.js"><link rel="prefetch" href="/assets/js/19.81ae8803.js"><link rel="prefetch" href="/assets/js/20.6dbaa3bd.js"><link rel="prefetch" href="/assets/js/21.598df0bd.js"><link rel="prefetch" href="/assets/js/22.677899e8.js"><link rel="prefetch" href="/assets/js/23.7faaa53e.js"><link rel="prefetch" href="/assets/js/24.3f70278e.js"><link rel="prefetch" href="/assets/js/25.1f31663b.js"><link rel="prefetch" href="/assets/js/26.11b32d8c.js"><link rel="prefetch" href="/assets/js/27.937e6c4a.js"><link rel="prefetch" href="/assets/js/28.70071fae.js"><link rel="prefetch" href="/assets/js/29.dc23aa5b.js"><link rel="prefetch" href="/assets/js/3.ec81689e.js"><link rel="prefetch" href="/assets/js/30.ed8f5796.js"><link rel="prefetch" href="/assets/js/31.f4e9c89d.js"><link rel="prefetch" href="/assets/js/32.a12bdeb5.js"><link rel="prefetch" href="/assets/js/33.ba537978.js"><link rel="prefetch" href="/assets/js/34.3f3aed56.js"><link rel="prefetch" href="/assets/js/35.b3742723.js"><link rel="prefetch" href="/assets/js/36.5068436c.js"><link rel="prefetch" href="/assets/js/37.152e6a7f.js"><link rel="prefetch" href="/assets/js/38.0074f8be.js"><link rel="prefetch" href="/assets/js/39.958402d2.js"><link rel="prefetch" href="/assets/js/4.bfbea725.js"><link rel="prefetch" href="/assets/js/40.02b627a9.js"><link rel="prefetch" href="/assets/js/41.1a3eaa9a.js"><link rel="prefetch" href="/assets/js/42.1d4de689.js"><link rel="prefetch" href="/assets/js/43.8b8f7277.js"><link rel="prefetch" href="/assets/js/44.da7e8291.js"><link rel="prefetch" href="/assets/js/45.d1be4e57.js"><link rel="prefetch" href="/assets/js/46.1243b922.js"><link rel="prefetch" href="/assets/js/47.59144a6e.js"><link rel="prefetch" href="/assets/js/48.eb5d841a.js"><link rel="prefetch" href="/assets/js/49.e95947ca.js"><link rel="prefetch" href="/assets/js/5.4bba5fec.js"><link rel="prefetch" href="/assets/js/50.402aaf34.js"><link rel="prefetch" href="/assets/js/51.45171455.js"><link rel="prefetch" href="/assets/js/52.b3fac182.js"><link rel="prefetch" href="/assets/js/53.3302e730.js"><link rel="prefetch" href="/assets/js/54.a623dddb.js"><link rel="prefetch" href="/assets/js/55.6bf13c99.js"><link rel="prefetch" href="/assets/js/56.f7aca36c.js"><link rel="prefetch" href="/assets/js/57.4718d9bd.js"><link rel="prefetch" href="/assets/js/58.8866db60.js"><link rel="prefetch" href="/assets/js/59.c2da64af.js"><link rel="prefetch" href="/assets/js/6.8d0488b9.js"><link rel="prefetch" href="/assets/js/60.40f5f5bd.js"><link rel="prefetch" href="/assets/js/61.647232be.js"><link rel="prefetch" href="/assets/js/62.78e08807.js"><link rel="prefetch" href="/assets/js/63.c403809e.js"><link rel="prefetch" href="/assets/js/64.d0e73209.js"><link rel="prefetch" href="/assets/js/65.ed5b2719.js"><link rel="prefetch" href="/assets/js/66.8b52d134.js"><link rel="prefetch" href="/assets/js/67.fe74eb12.js"><link rel="prefetch" href="/assets/js/68.ffe0934c.js"><link rel="prefetch" href="/assets/js/69.2c702241.js"><link rel="prefetch" href="/assets/js/7.2fd95e44.js"><link rel="prefetch" href="/assets/js/70.918fe9c5.js"><link rel="prefetch" href="/assets/js/71.d4cc0b5d.js"><link rel="prefetch" href="/assets/js/72.16e0506e.js"><link rel="prefetch" href="/assets/js/73.695e8859.js"><link rel="prefetch" href="/assets/js/74.38ac69da.js"><link rel="prefetch" href="/assets/js/75.e3ca215d.js"><link rel="prefetch" href="/assets/js/76.08f7b21e.js"><link rel="prefetch" href="/assets/js/77.f0de0d28.js"><link rel="prefetch" href="/assets/js/78.c1846e06.js"><link rel="prefetch" href="/assets/js/79.0f45a093.js"><link rel="prefetch" href="/assets/js/8.b88ee568.js"><link rel="prefetch" href="/assets/js/80.f8511766.js"><link rel="prefetch" href="/assets/js/81.e495076f.js"><link rel="prefetch" href="/assets/js/83.f82820db.js"><link rel="prefetch" href="/assets/js/84.90fc97db.js"><link rel="prefetch" href="/assets/js/85.d3f41ad6.js"><link rel="prefetch" href="/assets/js/86.cb4f5218.js"><link rel="prefetch" href="/assets/js/87.6be110ec.js"><link rel="prefetch" href="/assets/js/88.b3b1cb93.js"><link rel="prefetch" href="/assets/js/89.dbc4b20f.js"><link rel="prefetch" href="/assets/js/9.d77688e2.js"><link rel="prefetch" href="/assets/js/90.9d28b589.js"><link rel="prefetch" href="/assets/js/91.12aa2c87.js"><link rel="prefetch" href="/assets/js/92.b5c39224.js"><link rel="prefetch" href="/assets/js/93.abc093ef.js"><link rel="prefetch" href="/assets/js/94.172ffbc5.js"><link rel="prefetch" href="/assets/js/95.a432742d.js"><link rel="prefetch" href="/assets/js/96.8ec16300.js"><link rel="prefetch" href="/assets/js/97.9ac93dcb.js"><link rel="prefetch" href="/assets/js/98.49e59ae9.js"><link rel="prefetch" href="/assets/js/99.d8da21fa.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9d8515da.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="模式的个人网站" class="logo"> <span class="site-name can-hide">模式的个人网站</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="复习" class="dropdown-title"><span class="title">复习</span> <span class="arrow down"></span></button> <button type="button" aria-label="复习" class="mobile-dropdown-title"><span class="title">复习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/复习/汇总/" class="nav-link">
+  汇总
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大前端" class="dropdown-title"><span class="title">大前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="大前端" class="mobile-dropdown-title"><span class="title">大前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/大前端/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/node/" class="nav-link">
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/Webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/打包工具/" class="nav-link">
+  打包工具
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/持续化部署/" class="nav-link">
+  持续化部署
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架系列" class="dropdown-title"><span class="title">框架系列</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架系列" class="mobile-dropdown-title"><span class="title">框架系列</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/框架系列/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/框架系列/Vue/" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活日常" class="dropdown-title"><span class="title">生活日常</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活日常" class="mobile-dropdown-title"><span class="title">生活日常</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活日常/简历/" class="nav-link">
+  简历
+</a></li><li class="dropdown-item"><!----> <a href="/生活日常/面经/" class="nav-link">
+  面经
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/笔记/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/nodeTreeCli/" class="nav-link">
+  nodeTreeCli
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/vuepress/" class="nav-link">
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/前端代码规范/" class="nav-link">
+  前端代码规范
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/术与道/" class="nav-link">
+  术与道
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/脚手架搭建/" class="nav-link">
+  脚手架搭建
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/软件测试/" class="nav-link">
+  软件测试
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/软件需求/" class="nav-link">
+  软件需求
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/计算机基础/操作系统/" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/计算机基础/数据结构与算法/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机基础/计算机网络/" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/计算机基础/设计模式/" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/ywymoshi" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="复习" class="dropdown-title"><span class="title">复习</span> <span class="arrow down"></span></button> <button type="button" aria-label="复习" class="mobile-dropdown-title"><span class="title">复习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/复习/汇总/" class="nav-link">
+  汇总
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大前端" class="dropdown-title"><span class="title">大前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="大前端" class="mobile-dropdown-title"><span class="title">大前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/大前端/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/node/" class="nav-link">
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/Webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/打包工具/" class="nav-link">
+  打包工具
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/持续化部署/" class="nav-link">
+  持续化部署
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架系列" class="dropdown-title"><span class="title">框架系列</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架系列" class="mobile-dropdown-title"><span class="title">框架系列</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/框架系列/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/框架系列/Vue/" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活日常" class="dropdown-title"><span class="title">生活日常</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活日常" class="mobile-dropdown-title"><span class="title">生活日常</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活日常/简历/" class="nav-link">
+  简历
+</a></li><li class="dropdown-item"><!----> <a href="/生活日常/面经/" class="nav-link">
+  面经
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/笔记/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/nodeTreeCli/" class="nav-link">
+  nodeTreeCli
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/vuepress/" class="nav-link">
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/前端代码规范/" class="nav-link">
+  前端代码规范
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/术与道/" class="nav-link">
+  术与道
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/脚手架搭建/" class="nav-link">
+  脚手架搭建
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/软件测试/" class="nav-link">
+  软件测试
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/软件需求/" class="nav-link">
+  软件需求
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/计算机基础/操作系统/" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/计算机基础/数据结构与算法/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机基础/计算机网络/" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/计算机基础/设计模式/" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/ywymoshi" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>软件需求</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/%E7%AC%94%E8%AE%B0/%E8%BD%AF%E4%BB%B6%E9%9C%80%E6%B1%82/" aria-current="page" class="sidebar-link">简介</a></li><li><a href="/笔记/软件需求/1.软件开发的本质.html" class="active sidebar-link">1.软件开发的本质</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/笔记/软件需求/1.软件开发的本质.html#软件开发的本质" class="sidebar-link">软件开发的本质</a></li><li class="sidebar-sub-header"><a href="/笔记/软件需求/1.软件开发的本质.html#软件开发的意外事件" class="sidebar-link">软件开发的意外事件</a></li><li class="sidebar-sub-header"><a href="/笔记/软件需求/1.软件开发的本质.html#软件生命周期的5个阶段" class="sidebar-link">软件生命周期的5个阶段</a></li><li class="sidebar-sub-header"><a href="/笔记/软件需求/1.软件开发的本质.html#软件生命周期各阶段输入输出" class="sidebar-link">软件生命周期各阶段输入输出</a></li><li class="sidebar-sub-header"><a href="/笔记/软件需求/1.软件开发的本质.html#开发模型与方法" class="sidebar-link">开发模型与方法</a></li></ul></li><li><a href="/笔记/软件需求/2.需求确定.html" class="sidebar-link">2.需求确定</a></li><li><a href="/笔记/软件需求/3.可视化建模基础.html" class="sidebar-link">3.可视化建模基础</a></li><li><a href="/笔记/软件需求/4.需求规格说明.html" class="sidebar-link">4.需求规格说明</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="软件开发的本质"><a href="#软件开发的本质" class="header-anchor">#</a> 软件开发的本质</h2> <p><strong>软件开发的不变事实：</strong> <code>一致性</code>，<code>可变性</code>，和<code>不可见性</code>。</p> <ul><li><strong>一致性：</strong> 应用软件必须与所基于的特定硬件/软件明天相符合,也必须与现有的信息系统相符合，并集成在一致。</li> <li><strong>可变性：</strong> 业务过程和需求会不断的变化。</li> <li><strong>不可见性：</strong> 负责输出的代码通常深深地隐藏在”不可见”的程序语句，二进制代码库，以及周边的系统软件中。</li></ul> <h2 id="软件开发的意外事件"><a href="#软件开发的意外事件" class="header-anchor">#</a> 软件开发的意外事件</h2> <p>软件开发的意外事件的三个因素：利益相关者，过程，建模</p> <ol><li><p><strong>利益相关者</strong></p> <ul><li>客户
+<ul><li>客户的需求被误解或者没有被完全捕获</li> <li>客户的需求改变过于频繁</li> <li>客户没有准备为项目提供足够的资源</li> <li>客户不想与开发者合作</li> <li>客户怀有不切实际的期望</li> <li>软件不再对客户有利</li></ul></li> <li>开发者(分析员，设计员，程序员等)
+<ul><li>开发者不能胜任</li></ul></li></ul></li> <li><p><strong>过程</strong></p> <ul><li>声明了所执行活动的次序。</li> <li>详细说明要交付哪些开发的人工制品，以及什么时候交付。</li> <li>将活动和人工制品分配给开发者</li> <li>提供用来监控项目进展，评估结果和规划未来项目的标准</li></ul></li> <li><p><strong>建模</strong><br> <strong>UML:</strong> Unified Modeling Language 统一建模语言</p> <ul><li><strong>状态模型：</strong> 描述静态数据结构</li> <li><strong>行为模型：</strong> 描述对象协作</li> <li><strong>状态变化模型：</strong> 描述随着时间的推移，系统所允许的状态</li></ul></li></ol> <h2 id="软件生命周期的5个阶段"><a href="#软件生命周期的5个阶段" class="header-anchor">#</a> 软件生命周期的5个阶段</h2> <ol><li><strong>业务分析</strong> <ul><li>确定和详细说明需求，开发和集成系统的功能和数据模型，并捕获非功能性需求和其他系统约束。</li></ul></li> <li><strong>系统设计</strong> <ul><li>包括体系结构设计和详细设计。对涉及客户端的用户界面和服务器端的数据库对象的程序设计进行解释。提出影响系统可理解性，可维护性和可扩展性的各种设计问题，并对其文档化。</li></ul></li> <li><strong>实现</strong> <ul><li>对客户端应用程序和服务器数据库进行编码，测试等，保证系统实现符合系统设计。</li></ul></li> <li><strong>集成和部署</strong> <ul><li>将系统的组成构建组装在一起，以及与外部系统的对接。</li></ul></li> <li><strong>运行和维护</strong> <ul><li>使用新系统替换老系统，保障新系统的正常运行，并承接对新系统的修正和扩展工作。</li></ul></li></ol> <p><img src="/img/softwareRequire/1-3.png" alt="img"></p> <h2 id="软件生命周期各阶段输入输出"><a href="#软件生命周期各阶段输入输出" class="header-anchor">#</a> 软件生命周期各阶段输入输出</h2> <p><img src="/img/softwareRequire/1-3-1.png" alt="img"></p> <h2 id="开发模型与方法"><a href="#开发模型与方法" class="header-anchor">#</a> 开发模型与方法</h2> <p><strong>主要的开发模型与方法</strong></p> <ol><li>瀑布模型</li> <li>螺旋模型</li> <li>敏捷开发</li> <li>面向方面开发</li></ol> <ul><li><strong>瀑布模型</strong></li></ul> <blockquote><p>要求每一个阶段都有明确的文档产出，对于严格的瀑布模型每一个阶段都不应该重叠，而应该在评审通过、相关的产出物都已经基线后才能够进入到下一个阶段。就是说瀑布模型一般是按顺序执行的</p></blockquote> <p><img src="/img/softwareRequire/1-1.png" alt="img"></p> <ul><li><strong>螺旋模型</strong></li></ul> <blockquote><p>螺旋模型并不是一个完全独立的模型，而是与瀑布模型有着内在联系。它遵从瀑布模型“需求→架构→设计→编码→测试”的路线。其最大的特点是整个开发过程是迭代的和风险驱动的。就是通过将瀑布模型的多个阶段转化到多个迭代过程中，以减少项目的风险。</p></blockquote> <p><img src="/img/softwareRequire/1-2.png" alt="img"></p> <ul><li><strong>敏捷开发流程</strong></li></ul> <blockquote><p>定义：敏捷开发是一种价值观与原则，指导我们更加高效的开发。以用户需求为核心，采用迭代(时间周期)、增量(循序渐进，功能模块)的方式开发软件，目的在于快速覆盖、响应市场需求</p></blockquote> <p><strong>特点：</strong></p> <ol><li>迭代开发</li> <li>增量交付</li> <li>开发团队和用户反馈推动产品开发</li> <li>持续集成</li> <li>开发团队自我管理</li></ol> <p><img src="/img/softwareRequire/1-4.png" alt="img"></p> <ul><li>面向方面开发（AOP）</li></ul> <blockquote><p>AOP的主要目标是通过识别所谓的横切关注点，以及为这些关注点生产独立的软件模块来生产出更加模块化的系统。这些模块成为方面，利用成为方面编排的过程将方面集成起来。</p></blockquote> <p><strong>AOP的几个概念：</strong></p> <ul><li><strong>方面：</strong> 功能模块，AOP将系统分解成许多方面，这些方面构成了核心功能构建，称为基础代码。</li> <li><strong>连接点：</strong> 软件组成的预定义的点，例如对方法的调用，对属性的访问，对象的实例化和抛出异常等。</li> <li><strong>通知：</strong> 需要为连接点采取的特定动作称为通知（例如，检查用户的安全性权限，或开始一个新的业务事实）。通知可以在链接点执行之前运行（前置通知），也可以在链接点完成之后运行（后置通知），或者可以取代连接点的执行（环绕通知）</li> <li><strong>方面编排：</strong> 方面构成了单独的方面代码，为了这样的系统能够运行，软件构件必须由方面组成，必须将方面编排到程序的逻辑流中，这样的一个软件组成过程称为方面编排。</li> <li><strong>切入点：</strong> 同一个通知可以应用到程序的许多连接点，与单个通知相关的一组链接称为切入点。
+<img src="/img/softwareRequire/1-5.png" alt="img"></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/%E7%AC%94%E8%AE%B0/%E8%BD%AF%E4%BB%B6%E9%9C%80%E6%B1%82/" class="prev router-link-active">
+        简介
+      </a></span> <span class="next"><a href="/笔记/软件需求/2.需求确定.html">
+        2.需求确定
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.d23ef9a5.js" defer></script><script src="/assets/js/2.b5e03ded.js" defer></script><script src="/assets/js/82.62ccb1e8.js" defer></script>
+  </body>
+</html>

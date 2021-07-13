@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前端代码规范最佳实践 | 模式的个人网站</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/img/logo.png">
+    <meta name="description" content="学习就好比是座大山，人们沿着不同的路登山，分享着自己看到的风景。你不一定能看到别人看到的风景，体会到别人的心情。只有自己去登山，才能看到不一样的风景，体会才更加深刻。">
+    <link rel="preload" href="/assets/css/0.styles.9d8515da.css" as="style"><link rel="preload" href="/assets/js/app.d23ef9a5.js" as="script"><link rel="preload" href="/assets/js/2.b5e03ded.js" as="script"><link rel="preload" href="/assets/js/78.c1846e06.js" as="script"><link rel="prefetch" href="/assets/js/10.79e10916.js"><link rel="prefetch" href="/assets/js/11.bb2fc84a.js"><link rel="prefetch" href="/assets/js/12.8b596886.js"><link rel="prefetch" href="/assets/js/13.3cf776d0.js"><link rel="prefetch" href="/assets/js/14.3f902742.js"><link rel="prefetch" href="/assets/js/15.97689a43.js"><link rel="prefetch" href="/assets/js/16.21c07ad5.js"><link rel="prefetch" href="/assets/js/17.f0697782.js"><link rel="prefetch" href="/assets/js/18.f2229e19.js"><link rel="prefetch" href="/assets/js/19.81ae8803.js"><link rel="prefetch" href="/assets/js/20.6dbaa3bd.js"><link rel="prefetch" href="/assets/js/21.598df0bd.js"><link rel="prefetch" href="/assets/js/22.677899e8.js"><link rel="prefetch" href="/assets/js/23.7faaa53e.js"><link rel="prefetch" href="/assets/js/24.3f70278e.js"><link rel="prefetch" href="/assets/js/25.1f31663b.js"><link rel="prefetch" href="/assets/js/26.11b32d8c.js"><link rel="prefetch" href="/assets/js/27.937e6c4a.js"><link rel="prefetch" href="/assets/js/28.70071fae.js"><link rel="prefetch" href="/assets/js/29.dc23aa5b.js"><link rel="prefetch" href="/assets/js/3.ec81689e.js"><link rel="prefetch" href="/assets/js/30.ed8f5796.js"><link rel="prefetch" href="/assets/js/31.f4e9c89d.js"><link rel="prefetch" href="/assets/js/32.a12bdeb5.js"><link rel="prefetch" href="/assets/js/33.ba537978.js"><link rel="prefetch" href="/assets/js/34.3f3aed56.js"><link rel="prefetch" href="/assets/js/35.b3742723.js"><link rel="prefetch" href="/assets/js/36.5068436c.js"><link rel="prefetch" href="/assets/js/37.152e6a7f.js"><link rel="prefetch" href="/assets/js/38.0074f8be.js"><link rel="prefetch" href="/assets/js/39.958402d2.js"><link rel="prefetch" href="/assets/js/4.bfbea725.js"><link rel="prefetch" href="/assets/js/40.02b627a9.js"><link rel="prefetch" href="/assets/js/41.1a3eaa9a.js"><link rel="prefetch" href="/assets/js/42.1d4de689.js"><link rel="prefetch" href="/assets/js/43.8b8f7277.js"><link rel="prefetch" href="/assets/js/44.da7e8291.js"><link rel="prefetch" href="/assets/js/45.d1be4e57.js"><link rel="prefetch" href="/assets/js/46.1243b922.js"><link rel="prefetch" href="/assets/js/47.59144a6e.js"><link rel="prefetch" href="/assets/js/48.eb5d841a.js"><link rel="prefetch" href="/assets/js/49.e95947ca.js"><link rel="prefetch" href="/assets/js/5.4bba5fec.js"><link rel="prefetch" href="/assets/js/50.402aaf34.js"><link rel="prefetch" href="/assets/js/51.45171455.js"><link rel="prefetch" href="/assets/js/52.b3fac182.js"><link rel="prefetch" href="/assets/js/53.3302e730.js"><link rel="prefetch" href="/assets/js/54.a623dddb.js"><link rel="prefetch" href="/assets/js/55.6bf13c99.js"><link rel="prefetch" href="/assets/js/56.f7aca36c.js"><link rel="prefetch" href="/assets/js/57.4718d9bd.js"><link rel="prefetch" href="/assets/js/58.8866db60.js"><link rel="prefetch" href="/assets/js/59.c2da64af.js"><link rel="prefetch" href="/assets/js/6.8d0488b9.js"><link rel="prefetch" href="/assets/js/60.40f5f5bd.js"><link rel="prefetch" href="/assets/js/61.647232be.js"><link rel="prefetch" href="/assets/js/62.78e08807.js"><link rel="prefetch" href="/assets/js/63.c403809e.js"><link rel="prefetch" href="/assets/js/64.d0e73209.js"><link rel="prefetch" href="/assets/js/65.ed5b2719.js"><link rel="prefetch" href="/assets/js/66.8b52d134.js"><link rel="prefetch" href="/assets/js/67.fe74eb12.js"><link rel="prefetch" href="/assets/js/68.ffe0934c.js"><link rel="prefetch" href="/assets/js/69.2c702241.js"><link rel="prefetch" href="/assets/js/7.2fd95e44.js"><link rel="prefetch" href="/assets/js/70.918fe9c5.js"><link rel="prefetch" href="/assets/js/71.d4cc0b5d.js"><link rel="prefetch" href="/assets/js/72.16e0506e.js"><link rel="prefetch" href="/assets/js/73.695e8859.js"><link rel="prefetch" href="/assets/js/74.38ac69da.js"><link rel="prefetch" href="/assets/js/75.e3ca215d.js"><link rel="prefetch" href="/assets/js/76.08f7b21e.js"><link rel="prefetch" href="/assets/js/77.f0de0d28.js"><link rel="prefetch" href="/assets/js/79.0f45a093.js"><link rel="prefetch" href="/assets/js/8.b88ee568.js"><link rel="prefetch" href="/assets/js/80.f8511766.js"><link rel="prefetch" href="/assets/js/81.e495076f.js"><link rel="prefetch" href="/assets/js/82.62ccb1e8.js"><link rel="prefetch" href="/assets/js/83.f82820db.js"><link rel="prefetch" href="/assets/js/84.90fc97db.js"><link rel="prefetch" href="/assets/js/85.d3f41ad6.js"><link rel="prefetch" href="/assets/js/86.cb4f5218.js"><link rel="prefetch" href="/assets/js/87.6be110ec.js"><link rel="prefetch" href="/assets/js/88.b3b1cb93.js"><link rel="prefetch" href="/assets/js/89.dbc4b20f.js"><link rel="prefetch" href="/assets/js/9.d77688e2.js"><link rel="prefetch" href="/assets/js/90.9d28b589.js"><link rel="prefetch" href="/assets/js/91.12aa2c87.js"><link rel="prefetch" href="/assets/js/92.b5c39224.js"><link rel="prefetch" href="/assets/js/93.abc093ef.js"><link rel="prefetch" href="/assets/js/94.172ffbc5.js"><link rel="prefetch" href="/assets/js/95.a432742d.js"><link rel="prefetch" href="/assets/js/96.8ec16300.js"><link rel="prefetch" href="/assets/js/97.9ac93dcb.js"><link rel="prefetch" href="/assets/js/98.49e59ae9.js"><link rel="prefetch" href="/assets/js/99.d8da21fa.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9d8515da.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="模式的个人网站" class="logo"> <span class="site-name can-hide">模式的个人网站</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="复习" class="dropdown-title"><span class="title">复习</span> <span class="arrow down"></span></button> <button type="button" aria-label="复习" class="mobile-dropdown-title"><span class="title">复习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/复习/汇总/" class="nav-link">
+  汇总
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大前端" class="dropdown-title"><span class="title">大前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="大前端" class="mobile-dropdown-title"><span class="title">大前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/大前端/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/node/" class="nav-link">
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/Webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/打包工具/" class="nav-link">
+  打包工具
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/持续化部署/" class="nav-link">
+  持续化部署
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架系列" class="dropdown-title"><span class="title">框架系列</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架系列" class="mobile-dropdown-title"><span class="title">框架系列</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/框架系列/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/框架系列/Vue/" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活日常" class="dropdown-title"><span class="title">生活日常</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活日常" class="mobile-dropdown-title"><span class="title">生活日常</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活日常/简历/" class="nav-link">
+  简历
+</a></li><li class="dropdown-item"><!----> <a href="/生活日常/面经/" class="nav-link">
+  面经
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/笔记/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/nodeTreeCli/" class="nav-link">
+  nodeTreeCli
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/vuepress/" class="nav-link">
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/前端代码规范/" class="nav-link">
+  前端代码规范
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/术与道/" class="nav-link">
+  术与道
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/脚手架搭建/" class="nav-link">
+  脚手架搭建
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/软件测试/" class="nav-link">
+  软件测试
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/软件需求/" class="nav-link">
+  软件需求
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/计算机基础/操作系统/" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/计算机基础/数据结构与算法/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机基础/计算机网络/" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/计算机基础/设计模式/" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/ywymoshi" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="复习" class="dropdown-title"><span class="title">复习</span> <span class="arrow down"></span></button> <button type="button" aria-label="复习" class="mobile-dropdown-title"><span class="title">复习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/复习/汇总/" class="nav-link">
+  汇总
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大前端" class="dropdown-title"><span class="title">大前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="大前端" class="mobile-dropdown-title"><span class="title">大前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/大前端/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/node/" class="nav-link">
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/Webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/打包工具/" class="nav-link">
+  打包工具
+</a></li><li class="dropdown-item"><!----> <a href="/大前端/持续化部署/" class="nav-link">
+  持续化部署
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架系列" class="dropdown-title"><span class="title">框架系列</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架系列" class="mobile-dropdown-title"><span class="title">框架系列</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/框架系列/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/框架系列/Vue/" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活日常" class="dropdown-title"><span class="title">生活日常</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活日常" class="mobile-dropdown-title"><span class="title">生活日常</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活日常/简历/" class="nav-link">
+  简历
+</a></li><li class="dropdown-item"><!----> <a href="/生活日常/面经/" class="nav-link">
+  面经
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/笔记/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/nodeTreeCli/" class="nav-link">
+  nodeTreeCli
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/vuepress/" class="nav-link">
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/前端代码规范/" class="nav-link">
+  前端代码规范
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/术与道/" class="nav-link">
+  术与道
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/脚手架搭建/" class="nav-link">
+  脚手架搭建
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/软件测试/" class="nav-link">
+  软件测试
+</a></li><li class="dropdown-item"><!----> <a href="/笔记/软件需求/" class="nav-link">
+  软件需求
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/计算机基础/操作系统/" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/计算机基础/数据结构与算法/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/计算机基础/计算机网络/" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/计算机基础/设计模式/" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/ywymoshi" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>前端代码规范</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/" aria-current="page" class="active sidebar-link">简介</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/#前端代码规范最佳实践" class="sidebar-link">前端代码规范最佳实践</a></li><li class="sidebar-sub-header"><a href="/%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/#前言" class="sidebar-link">前言</a></li><li class="sidebar-sub-header"><a href="/%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/#eslint" class="sidebar-link">eslint</a></li><li class="sidebar-sub-header"><a href="/%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/#prettier" class="sidebar-link">prettier</a></li><li class="sidebar-sub-header"><a href="/%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/#editorconfig" class="sidebar-link">editorconfig</a></li><li class="sidebar-sub-header"><a href="/%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/#进行配置-js文件" class="sidebar-link">进行配置（js文件）</a></li><li class="sidebar-sub-header"><a href="/%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/#使用编辑器-自动格式化代码" class="sidebar-link">使用编辑器，自动格式化代码</a></li><li class="sidebar-sub-header"><a href="/%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/#规则定制化" class="sidebar-link">规则定制化</a></li><li class="sidebar-sub-header"><a href="/%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/#让-eslint-认识-js-以外的更多语法【以-typescript-为例】" class="sidebar-link">让 eslint 认识 js 以外的更多语法【以 typescript 为例】</a></li><li class="sidebar-sub-header"><a href="/%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/#prettier-和-editorconfig" class="sidebar-link">Prettier 和 EditorConfig</a></li><li class="sidebar-sub-header"><a href="/%E7%AC%94%E8%AE%B0/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/#规范检查增强-husky-lint-staged" class="sidebar-link">规范检查增强（husky + lint-staged）</a></li></ul></li><li><a href="/笔记/前端代码规范/Lerna.html" class="sidebar-link">Lerna</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="前端代码规范最佳实践"><a href="#前端代码规范最佳实践" class="header-anchor">#</a> 前端代码规范最佳实践</h2> <p>本文参考于：<a href="https://www.jianshu.com/p/8312704c6be7" target="_blank" rel="noopener noreferrer">前端代码规范最佳实践<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a><br>
+eslint+prettier+editorconfig+lint-staged</p> <h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>项目开发过程中，用到各种代码规范性工具。</p> <p>时不时就会出现，多种工具重复作用，相互之间有冲突的情况。</p> <p>比如：按照 prettier 的规则格式化的代码，不符合 eslint 的规定。于是 eslint 报错。</p> <h2 id="eslint"><a href="#eslint" class="header-anchor">#</a> eslint</h2> <p><a href="https://eslint.bootcss.com/docs/user-guide/getting-started" target="_blank" rel="noopener noreferrer">eslint官网文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a><br>
+通过配置 .eslintrc.* 制定团队代码规范。</p> <p>在代码编写的过程中，出现不符合规范的代码，进行红线提示。帮助开发者及时更正不符合规范的代码。</p> <p>同时，提供命令行检查规范及 auto-fix 能力。</p> <p><strong>【具体】</strong>
+检查 main.js 文件的代码规范：</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>npx eslint main.js
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>自动修复 main.js 部分规范问题（通常如：缺少/多余分号，缩进格式等）：</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>npx eslint main.js --fix
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>【注意】</strong></p> <p>eslint 的 auto-fix，能够修复的规范问题比较有限。</p> <p>通常，需要较大变动才能修复的规范问题，eslint 无法自动修复。如：单行不能超过 80 个字符。</p> <h2 id="prettier"><a href="#prettier" class="header-anchor">#</a> prettier</h2> <p><a href="https://prettier.io/docs/en/install.html" target="_blank" rel="noopener noreferrer">prettier官网文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a><br>
+根据规范，自动格式化代码。具有比 eslint auto-fix 更加强大的代码规范性修复能力。</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>npx prettier main.js --write
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>prettier 会根据 .eslintrc.* 的约定，修复 main.js 的规范性问题。包括较大变动才能修复的规范问题。如：单行不能超过 80 个字符。</p> <h2 id="editorconfig"><a href="#editorconfig" class="header-anchor">#</a> editorconfig</h2> <p>编辑器配置。用于覆盖编辑器默认配置，以确保不同编辑器之间，代码格式的统一。</p> <p>比如，使用 editorconfig，规定开发过程中，点击 tab 按钮，是以 tab 格式进行缩进，还是以 space 格式进行缩进。</p> <p>如果没有约定，不同的编辑器，或者相同编辑器、不同开发者的配置存在差异，可能出现，有的人是 tab 缩进、有的人是 space 缩进的情况，造成代码风格的差异。</p> <p><strong>【注】</strong></p> <p>vscode 这类编辑器，需要自行安装 editorconfig 插件。</p> <h2 id="进行配置-js文件"><a href="#进行配置-js文件" class="header-anchor">#</a> 进行配置（js文件）</h2> <ol><li><p>安装 eslint + prettier</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>yarn add eslint prettier -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>安装 eslint-config-prettier</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>yarn add eslint-config-prettier -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>【作用】</strong></p> <p>让所有可能会与 prettier 规则存在冲突的 eslint rule，失效，并使用 prettier 的规则进行代码检查。</p> <p>相当于，用 prettier 的规则，覆盖掉 eslint:recommended 的部分规则。</p> <p>后面 prettier 格式化，也会根据这个规则来。因此，不会再有冲突。</p> <p><strong>【使用】</strong></p> <p>.eslintrc.js</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>{
+
+    &quot;extends&quot;: [&quot;eslint:recommended&quot;, &quot;prettier&quot;]
+
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></li> <li><p>安装 eslint-plugin-prettier</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>yarn add eslint-plugin-prettier -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>【作用】</strong></p> <p>将 prettier 的能力集成到 eslint 中。按照 prettier 的规则检查代码规范性，并进行修复。</p> <p><strong>【使用】</strong></p> <p>.eslintrc.js</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>{
+
+    &quot;rules&quot;:{
+
+        &quot;prettier/prettier&quot;:&quot;error&quot; // 不符合 prettier 规则的代码，要进行错误提示（红线）
+
+    },
+
+    &quot;plugins&quot;: [&quot;prettier&quot;]
+
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>或</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>{
+
+    &quot;extends&quot;: [&quot;eslint:recommended&quot;,&quot;plugin:prettier/recommended&quot;]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>【看一下效果】</strong></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>npx eslint --fix main.js
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>至此，eslint 会拥有和 prettier 一样的修复能力。</p> <p>像 prettier 一样，格式化所有不符合规范的代码。</p></li></ol> <h2 id="使用编辑器-自动格式化代码"><a href="#使用编辑器-自动格式化代码" class="header-anchor">#</a> 使用编辑器，自动格式化代码</h2> <p><strong>（1）使用自己编辑器的快捷键，格式化代码</strong></p> <p>以 vscode 为例：shift + option + f</p> <p>默认格式化规则选择 prettier，即可完成代码格式化。</p> <p><strong>（2）保存代码，自动格式化</strong></p> <p>同样以 vscode 为例，打开你的 settings.json，添加下面这句话：</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&quot;editor.formatOnSave&quot;: true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>【注】</strong></p> <p>至此，js、json、less等文件，均可实现自动格式化。</p> <p>文件格式化规则，遵从我们在 .eslintrc.js 里的配置。也就是，使用我们的 prettier 插件默认规则去格式化。</p> <p><strong>【附】</strong></p> <p>如果你使用的是 webstorm，或许可以参考这个 <a href="https://www.jianshu.com/p/2f3cad152192" target="_blank" rel="noopener noreferrer">webstorm配置<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="规则定制化"><a href="#规则定制化" class="header-anchor">#</a> 规则定制化</h2> <p>保存任意 js 文件，观察当前规则是否符合期望。如果不符合，根目录下创建 .prettierrc，进行定制化配置。</p> <p>如 .prettierrc 如下：</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>{
+    &quot;singleQuote&quot;: true
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>再次保存代码，prettier 将会把 js 文件中的双引号，全部格式化为单引号。</p> <p>至此，对 js 文件的规范定义与自动格式化配置，全部完成。</p> <p><strong>【注】</strong></p> <p>这里的 .prettierrc，具有格式化规则的最高优先级。</p> <h2 id="让-eslint-认识-js-以外的更多语法【以-typescript-为例】"><a href="#让-eslint-认识-js-以外的更多语法【以-typescript-为例】" class="header-anchor">#</a> 让 eslint 认识 js 以外的更多语法【以 typescript 为例】</h2> <ol><li><p><strong>安装</strong><br>
+（1）使用 ts，自然要安装 typescript</p> <p>（2）为了让 eslint 认识 ts 语法，要安装相应的 parser</p> <p>（3）为了指定 ts 代码的规范，要安装相应的 plugin</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>    yarn add typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p><strong>配置</strong></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>{
+
+    &quot;parser&quot;:&quot;@typescript-eslint/parser&quot;,
+
+    &quot;extends&quot;:[&quot;plugin:@typescript-eslint/recommended&quot;, &quot;eslint:recommended&quot;, &quot;prettier&quot;],
+
+    &quot;env&quot;:{
+
+        &quot;es6&quot;:true,
+
+        &quot;node&quot;:true
+
+    },
+
+    &quot;rules&quot;:{
+
+        &quot;prettier/prettier&quot;:&quot;error&quot;
+
+    },
+
+    &quot;plugins&quot;: [&quot;prettier&quot;]
+
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p><strong>【注】extends 的含义</strong>
+告诉 eslint，根据指定的规范，去检查指定类型的文件。</p> <p><strong>如上例：</strong></p> <p>根据 @typescript-eslint/recommended 规范，检查 ts 代码。</p> <p>根据 eslint:recommended + prettier 规范，去检查 js 代码。</p> <p>当某一类型的文件，被制定了不止1个规范，存在某些规范冲突时，后面的会覆盖掉前面的。</p> <p>在本例中，prettier 制定的规范，会覆盖掉 eslint:recommended 的某些规范。</p> <p>eslint 会按照覆盖后的规则，去检查 js 文件。</p></li> <li><p><strong>使用</strong></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>   npx eslint --fix main.ts
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>【如果能够正常格式化】</strong></p> <p>done。</p> <p><strong>【如果出现问题】</strong></p> <p>这里，eslint 会使用 prettier 插件，根据 prettier 的规则格式化代码。</p> <p>但同时，eslint 会根据 @typescript-eslint/recommended 的规则，检查代码规范性。</p> <p>当 @typescript-eslint/recommended 的规则和 prettier 的规则出现不一致，就会造成，格式化后的代码，报 eslint 错误的问题。</p></li> <li><p><strong>解决冲突（如果存在冲突）</strong>
+使用相应的 prettier 插件，消除冲突。</p> <p>也就是说，prettier 的规则和 @typescript-eslint/recommended 存在冲突，那就使用 prettier/@typescript-eslint 插件。</p> <p>和前面，使用 eslint-config-prettier 消除 eslint:recommended 与 prettier 的规则冲突，同理。</p> <p>具体可以使用那些插件，查阅：https://github.com/prettier/eslint-config-prettier</p> <p>它们全部由 eslint-config-prettier 这个库提供。</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>{
+
+   &quot;parser&quot;:&quot;@typescript-eslint/parser&quot;,
+
+    &quot;extends&quot;:[
+
+        &quot;plugin:@typescript-eslint/recommended&quot;, 
+
+        &quot;eslint:recommended&quot;, 
+
+        &quot;prettier&quot;, 
+
+        &quot;prettier/@typescript-eslint&quot;
+
+    ],
+
+    &quot;env&quot;:{
+
+        &quot;es6&quot;:true,
+
+        &quot;node&quot;:true
+
+    },
+
+    &quot;rules&quot;:{
+
+        &quot;prettier/prettier&quot;:&quot;error&quot;
+
+    },
+
+    &quot;plugins&quot;: [&quot;prettier&quot;]
+
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><p><strong>【注意】</strong></p> <p>这里，不要通过手动写 rules，去消除出现的冲突。</p> <p>因为，已经发现的冲突，可能只是部分冲突，手写 rule 不能完整解决冲突问题，会存在遗漏。</p></li> <li><p><strong>自定义规则</strong><br>
+当 prettier 插件的默认规则，与团队习惯不符合时，进行规则自定义。</p> <p>（1）校验规则定义（.eslintrc.js）</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>
+{
+
+   &quot;parser&quot;:&quot;@typescript-eslint/parser&quot;,
+
+    &quot;extends&quot;:[
+
+        &quot;plugin:@typescript-eslint/recommended&quot;, 
+
+        &quot;eslint:recommended&quot;, 
+
+        &quot;prettier&quot;, 
+
+        &quot;prettier/@typescript-eslint&quot;
+
+    ],
+
+    &quot;env&quot;:{
+
+        &quot;es6&quot;:true,
+
+        &quot;node&quot;:true
+
+    },
+
+    &quot;rules&quot;:{
+
+        &quot;prettier/prettier&quot;:&quot;error&quot;,
+
+        // 比如，自定义缩进约束为4格（注意：这个规则会对所有文件生效，不只是ts）      
+
+        &quot;@typescript-eslint/indent&quot;: [&quot;error&quot;, 4]     
+
+    },
+
+    &quot;plugins&quot;: [&quot;prettier&quot;]
+
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br></div></div><p>（2）格式化规则定义（.prettierrc）</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>{
+
+    &quot;tabWidth&quot;: 4  // 与 eslint 的自定义规则保持一致
+
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></li></ol> <h2 id="prettier-和-editorconfig"><a href="#prettier-和-editorconfig" class="header-anchor">#</a> Prettier 和 EditorConfig</h2> <p>有些规则，editorconfig 和 .prettierrc 同时可以定义。</p> <p>因此，我们要避免冗余、重复的定义。</p> <p>这些规则如下：</p> <p>end_of_line</p> <p>indent_style</p> <p>indent_size/tab_width</p> <p>max_line_length</p> <p>我们将这些规则的定义，均放在 .editorconfig 中。</p> <p>配置好 .editorconfig 后，保存代码，即使没有配置 .prettierrc，prettier 也会按照 .editorconfig 的定义来格式化代码。</p> <h2 id="规范检查增强-husky-lint-staged"><a href="#规范检查增强-husky-lint-staged" class="header-anchor">#</a> 规范检查增强（husky + lint-staged）</h2> <p>在 git commit 之前，先强制执行prettier格式化（防止某些成员开发期间不开启编辑器格式化）、再检查代码规范，如果检查不通过、阻止提交。</p> <ol><li>新建 .eslintignore + .prettierignore
+.eslintignore、.prettierignore，参考如下：</li></ol> <div class="language-text line-numbers-mode"><pre class="language-text"><code>.DS_Store
+
+node_modules
+
+dist
+
+
+
+.gitignore
+
+.eslintignore
+
+.prettierignore
+
+LICENSE
+
+README.md
+
+yarn.lock
+
+# local env files
+
+.env.local
+
+.env.*.local
+
+# Log files
+
+npm-debug.log*
+
+yarn-debug.log*
+
+yarn-error.log*
+
+# Editor directories and files
+
+.idea
+
+.vscode
+
+*.suo
+
+*.ntvs*
+
+*.njsproj
+
+*.sln
+
+*.sw?
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br></div></div><p>2.安装</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>yarn add husky lint-staged -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>3.使用
+package.json添加：</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>
+&quot;scripts&quot;: {
+
+    &quot;lint&quot;: &quot;eslint .&quot;,
+
+    &quot;prettier&quot;: &quot;prettier --write .&quot;
+
+},
+
+&quot;husky&quot;: {
+
+    &quot;hooks&quot;: {
+
+      &quot;pre-commit&quot;: &quot;lint-staged&quot;
+
+    }
+
+  },
+
+  &quot;lint-staged&quot;: {
+
+    &quot;*&quot;: [
+
+        &quot;npm run prettier&quot;, 
+
+        &quot;npm run lint&quot;,
+
+        &quot;git add .&quot;
+
+    ]
+
+  }
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><p>git commit 之前，会自动使用 prettier 格式化 ignore 之外的代码。格式化后，自动检查所有文件，是否全部符合 eslint 规范。</p> <p>存在不符合规范的代码，git commit 将被终止。</p> <p><strong>【注】</strong></p> <p>因为 prettier 只是会帮我们格式化代码，并不能够修复所有 eslint 错误，比如定义未使用的变量，prettier 不会自动帮我们删除，要手动删除。</p> <p>因此，prettier 后再 eslint，是有必要的。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.d23ef9a5.js" defer></script><script src="/assets/js/2.b5e03ded.js" defer></script><script src="/assets/js/78.c1846e06.js" defer></script>
+  </body>
+</html>
